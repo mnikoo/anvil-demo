@@ -10,7 +10,7 @@ import anvil.http
   
 @anvil.server.callable
 def get_revenue():
-  return app_tables.revenue.search()
+  return list(app_tables.revenue.search())
  
 @anvil.server.callable
 def get_user_signups():
