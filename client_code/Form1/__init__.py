@@ -21,15 +21,7 @@ class Form1(Form1Template):
     self.build_weather_graph()
      
   def build_revenue_graph(self):
-    # self.plot_1.data = go.Bar(y=[100,400,200,300,500])
-    db_data = anvil.server.call('get_revenue')
-    self.plot_1.data = go.Bar(x = [x['date'] for x in db_data],
-                              y = [x['amount'] for x in db_data],
-                              marker=dict(color='#2196f3'))
-    self.style_plot(self.plot_1)
-    self.plot_1.layout.title = "REVENUE GROWTH"
-    max_revenue = sorted(db_data, key=lambda x: x['amount'], reverse=True)[0]
-    self.revenue_label.text = "{}, {:,}".format(max_revenue['date'].strftime("%d %b %Y"), max_revenue['amount'])
+   print('hello')   
     
   def build_signups_graph(self):
     signups = anvil.server.call('get_user_signups')
