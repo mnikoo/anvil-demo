@@ -10,7 +10,10 @@ import anvil.http
   
 @anvil.server.callable
 def get_revenue():
-  return list(app_tables.revenue.search())
+    return [{'amount': 1400, 'date':datetime(2019, 3, 1, 0, 0)}, 
+            {'amount': 3500, 'date':datetime(2019, 4, 1, 0, 0)}, 
+            {'amount': 2000, 'date':datetime(2019, 5, 1, 0, 0)},
+            {'amount': 1000, 'date':datetime(2019, 6, 1, 0, 0)}]
  
 @anvil.server.callable
 def get_user_signups():
