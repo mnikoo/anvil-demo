@@ -4,7 +4,7 @@ Following these steps results in creation of AWS resources, which might incur co
 
 Go to the [Amazon EC2 Console](https://console.aws.amazon.com/ec2)
 
-Make sure the Ireland (eu-west-1) region is selected at the top right of the console.
+Make sure the North Virginia (us-east-1) region is selected at the top right of the console.
 
 Choose "Launch instance"
 
@@ -18,14 +18,14 @@ Choose "Ubuntu Server 22.04 LTS"
 Keep the default "64-bit (x86)" architecture
 
 ### Instance type
-Choose the "t3.micro" instance type
+Choose the "t2.micro" instance type
 
 ### Key pair (login)
 Choose "Proceed without a key pair (not recommended)"
 
 ### Firewall
 Choose "Create security group"
-* Keep the "Allow SSH traffic from" checked, but change "Anywhere" to "Custom", and add this CIDR `18.202.216.48/29`
+* Keep the "Allow SSH traffic from" checked, but change "Anywhere" to "Custom", and add this CIDR `18.206.107.24/29`
 * Check the "Allow HTTP traffic from the internet"
 
 ## Deploying Anvil runtime and the example dashboard solution 
