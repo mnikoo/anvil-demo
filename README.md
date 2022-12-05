@@ -1,3 +1,5 @@
+Following these steps results in creation of AWS resources, which might incur costs. Make sure you are aware of the associated costs and terminate the resources when you no longer need them.
+
 # Deployment Guide
 
 Go to the [Amazon EC2 Console](https://console.aws.amazon.com/ec2)
@@ -59,3 +61,12 @@ Leave the User name as default ("Ubuntu").
 Click "Connect".
 
 Once you are connected, run the commands in [manual-deployment.sh](./deployment/manual-deployment.sh) one by one from the console.
+
+
+# Terminating resources
+
+Go to the [Amazon EC2 Console](https://console.aws.amazon.com/ec2).
+
+From the "Instances" menu, choose the instance you created earlier.
+
+From the "Instnce state" menu, choose "Terminate instance".
